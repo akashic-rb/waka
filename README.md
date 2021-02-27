@@ -15,5 +15,5 @@ Download & Instruction:
 
 Tribution:
 Special thanks to my team members who were enthusiastically working with me in this project
-- Đỗ xuân Phương (Front-end, Leader)
+- Đỗ Xuân Phương (Front-end, Leader)
 - Trịnh Ngọc Hậu (Front-end)
