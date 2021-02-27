@@ -6,10 +6,10 @@ Download & Instruction:
 1. Install/Make sure to have a PHP Server support
 2. Create a database in phpMyAdmin
 3. In phpMyAdmin import /database/waka.sql
-4. open model/connect.php edit 
-	-database: database name which is just created
-	-username: username of the PHP Server support, often named 'root'
-	-password: password of the PHP Server support, often ''
+4. open model/connect.php edit
+- Database: database name which is just created
+- Username: username of the PHP Server support, often named 'root'
+- Password: password of the PHP Server support, often named '' or 'root'
 5. Launch PHP Server support
 6. Open your browser, go to localhost/index.php
 
