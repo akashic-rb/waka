@@ -12,6 +12,6 @@ Description: This is a ecommerce website, you can go and view books, read their 
 5. Launch PHP Server support
 6. Open your browser, go to localhost/index.php
 
-Special thanks to my team members who were enthusiastically helping me in this project
+Special thanks to my team members who were enthusiastically working with me in this project
 - Đỗ xuân Phương (Front-end, Leader)
 - Trịnh Ngọc Hậu (Front-end)
