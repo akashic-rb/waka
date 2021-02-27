@@ -1,0 +1,139 @@
+#tab {
+    width: 100%;
+}
+
+#tab tr td {
+    padding: 15px 0px;
+}
+
+#tab_pro {
+    width: 100%;
+}
+
+#tab_pro tr th {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#tab_pro tr td {
+    border: 1px solid #ccc;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#detail {
+    width: 365px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#tab_pro .name {
+    width: 150px;
+}
+
+#tab input {
+    padding-left: 15px;
+}
+
+.card-body {
+    padding: 0 15px;
+}
+
+.small-box {
+    border-radius: 5px;
+    width: 100%;
+    height: 135px;
+    padding: 10px;
+    position: relative;
+}
+
+.small-box a {
+    color: white;
+}
+
+.small-box:hover .icon>i {
+    transform: scale(1.1);
+}
+
+.small-box .icon>i {
+    font-size: 50px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    transition: -webkit-transform .3s linear;
+    transition: transform .3s linear;
+    transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+.small-box .icon {
+    color: rgba(0, 0, 0, .15);
+    z-index: 0;
+}
+
+.inner {
+    color: white;
+}
+
+.inner h3 {
+    margin: 0;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.bg-info {
+    background-color: #17a2b8;
+}
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.small-box-footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.mr-x {
+    margin: 0;
+}
+
+/* pagination */
+.pagination {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #214761;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.flex-table {
+    width: 45%;
+    margin: 0 15px;
+}

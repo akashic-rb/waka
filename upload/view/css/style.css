@@ -1,0 +1,1709 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------------star HEADER-----------------*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.top-menu {
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    width: 110px;
+}
+
+.top-menu form {
+    width: 425px;
+    height: auto;
+}
+
+.top-menu form .search {
+    width: 353px;
+    padding: 4px;
+}
+
+.top-menu form .btn {
+    padding: 5.6px;
+    border: none;
+    background-color: #1ba085;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+/*
+.top-menu .wrap-login {
+    float: right;
+}
+*/
+
+.login,
+.register {
+    width: 100px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ba085;
+    text-transform: capitalize;
+}
+
+.login a,
+.register a {
+    color: white;
+}
+
+.user {
+    float: left;
+    width: 160px;
+    font-size: 14px;
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.user span {
+    text-transform: capitalize;
+}
+
+.user i {
+    font-size: 20px;
+    color: tomato;
+}
+
+.profile {
+    position: absolute;
+    width: 280px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    z-index: 5;
+}
+
+.pro {
+    overflow: hidden;
+    padding: 20px 20px 10px;
+    position: relative;
+}
+
+.user-img {
+    float: left;
+    width: 30%;
+}
+
+.user-img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-name {
+    float: right;
+    width: 70%;
+}
+
+.user-name p {
+    font-size: 18px;
+    margin: 0px;
+    margin: 7px 0;
+    text-transform: capitalize;
+}
+
+.user-name a:hover {
+    color: #168f77;
+}
+
+.order {
+    padding: 0 30px;
+    list-style: none;
+}
+
+.order li {
+    padding: 5px 0;
+}
+
+.user-name a,
+.order li a,
+.feedback a {
+    color: gray;
+}
+
+.order li a:hover {
+    color: #168f77;
+}
+
+.feedback {
+    padding: 20px 20px 30px;
+}
+
+.feedback a:hover {
+    color: #168f77;
+}
+
+.cart {
+    float: right;
+    width: 120px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ba085;
+    text-transform: capitalize;
+}
+
+.logout {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ba085;
+    text-transform: capitalize;
+}
+
+.logout i {
+    font-size: 15px;
+}
+
+.logout a,
+.logout i,
+.cart a,
+.cart i {
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: 0.3s;
+    z-index: 4;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.sticky+.content {
+    padding-top: 100px;
+}
+
+.small_logo {
+    width: 20px;
+}
+
+
+/* start menu*/
+
+.bot-menu {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bot-menu li {
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+
+.bot-menu li a {
+    color: black;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.bot-menu li a:hover {
+    color: #1ba085;
+}
+
+
+/* end menu*/
+
+
+/*------------------------end HEADER-------------------*/
+
+
+/*------------------------star HOME--------------------*/
+
+section {
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*start banner */
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #168f77;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+*/
+
+
+/*end banner*/
+
+.content {
+    width: 1100px;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left-siderbar {
+    width: 250px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    background-color: white;
+}
+
+.ht900 {
+    height: 900px;
+}
+
+.ht660 {
+    height: 660px;
+}
+
+.left-siderbar .h2 {
+    border-bottom: 1px solid #1ba085;
+    font-size: 18px;
+    color: #1ba085;
+}
+
+.left-siderbar li {
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.left-siderbar li a {
+    text-transform: capitalize;
+    color: black;
+}
+
+.left-siderbar li a:hover {
+    color: #1ba085;
+}
+
+.right-siderbar {
+    width: 850px;
+    float: left;
+    padding-left: 30px;
+}
+
+.right-siderbar .content-header {
+    display: flex;
+    justify-self: start;
+    justify-content: space-between;
+    border-bottom: 1px solid #1ba085;
+    height: 40px;
+}
+
+.content-header .title {
+    width: 25%;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 55px;
+    color: #168f77;
+}
+
+.content-header ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+    position: relative;
+}
+
+.content-header ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: black;
+}
+
+.content-header ul li a:hover {
+    color: #168f77;
+}
+
+.content-header ul li:hover::before {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #168f77;
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 50%;
+}
+
+.wrap-book {
+    padding-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.box-transparent {
+    width: 260px;
+    height: 228px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.box-transparent .book img {
+    width: 120px;
+    height: 176px;
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
+.box-transparent .book {
+    width: 260px;
+    height: 198px;
+    background-color: white;
+    position: relative;
+    padding-top: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+
+.box-transparent .book:hover::before {
+    content: "";
+    width: 260px;
+    height: 198px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 1px solid #1b806b;
+}
+
+.box-transparent .book .title {
+    width: 44%;
+    float: right;
+    text-transform: capitalize;
+}
+
+.box-transparent .book .title a {
+    color: black;
+    z-index: 2;
+    position: relative;
+}
+
+.box-transparent .book .title a:hover {
+    color: #168f77;
+}
+
+.box-transparent .book .title .author {
+    color: gray;
+    font-size: 12px;
+}
+
+.box-transparent .author p {
+    margin: 0;
+    margin: 8px 0;
+}
+
+.box-transparent .views {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: gray;
+}
+
+.box-transparent .book form .add_cart {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ba085;
+    color: white;
+    cursor: pointer;
+}
+
+.br-bot {
+    width: 1200px;
+    height: 180px;
+    margin: auto;
+}
+
+.br-bot img {
+    width: 100%;
+    height: 160px;
+}
+
+
+/*---------------------end HOME----------------------*/
+
+
+/*------calendar-------*/
+
+.wrap {
+    width: 1100px;
+    height: 160px;
+    margin: 0 auto;
+    background-color: #8bd0de;
+    margin-bottom: 30px;
+}
+
+.left-wrap {
+    float: left;
+    width: 230px;
+    height: 130px;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.left-wrap p {
+    margin: 8px 0;
+}
+
+.left-wrap .txt {
+    font-size: 18px;
+}
+
+.left-wrap .year {
+    font-size: 20px;
+}
+
+.left-wrap .month {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.right-wrap {
+    float: left;
+    width: 840px;
+    padding: 10px;
+}
+
+.right-wrap .scrollbar {
+    width: 810px;
+    height: 140px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.right-wrap .scrollbar .trans {
+    width: 2150px;
+}
+
+#style::-webkit-scrollbar {
+    height: 8px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+#style::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 100px white;
+}
+
+#style::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px #8bd0de;
+}
+
+#style::-webkit-scrollbar-thumb:hover {
+    background-color: #1ba085;
+}
+
+.box-calendar {
+    float: left;
+    width: 240px;
+    height: 102px;
+    padding: 15px;
+    margin-right: 25px;
+    margin-top: 14px;
+    border-radius: 6px;
+    background-color: white;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.calendar {
+    float: left;
+    width: 72px;
+    height: 72px;
+    margin-right: 15px;
+    border-radius: 6px;
+    background-color: #8bd0de;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+.calendar .week-day {
+    font-size: 16px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.calendar .date {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.txt-calendar {
+    float: left;
+    width: 123px;
+}
+
+.txt-calendar .name {
+    padding: 0;
+    margin: 0;
+    width: 123px;
+    height: 46px;
+    padding-top: 6px;
+}
+
+.txt-calendar .name a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.txt-calendar .name a:hover {
+    color: #1ba085;
+}
+
+.txt-calendar .episode {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*------calendar-------*/
+
+
+/*------mới nhất-------*/
+
+.new-week {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    padding: 0 30px 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-top: 20px;
+}
+
+.card-book {
+    width: 150px;
+    height: 335px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    position: relative;
+    margin-left: 20px;
+}
+
+.card-book p a {
+    color: black;
+}
+
+.card-book p a:hover {
+    color: #1b806b;
+}
+
+.card-book:hover::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 335px;
+    top: 0;
+    left: 0;
+    border: 1px solid #168f77;
+    z-index: 2;
+}
+
+.card-book>div {
+    position: absolute;
+    width: 150px;
+    height: 317px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.card-book img {
+    width: 100%;
+    height: 219px;
+}
+
+.card-book .txt {
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+
+.card-book .name {
+    font-size: 13px;
+    height: 32px;
+}
+
+.card-book .author {
+    font-size: 12px;
+    color: gray;
+}
+
+.card-book .view {
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    ;
+    padding-top: 8px;
+    font-size: 12px;
+    color: gray;
+}
+
+
+/*---------mới nhất---------*/
+
+
+/*------banner-middle-------*/
+
+.bn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bn .img {
+    width: 100%;
+    height: 480px;
+    background-image: url('../img/bn5.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bn-tilte {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*------banner-middle-------*/
+
+
+/*---------------------star PRODUCT------------------*/
+
+.product {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #168f77;
+}
+
+.product p {
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    color: #1ba085;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.pa {
+    padding-top: 20px;
+}
+
+select {
+    width: 150px;
+    height: 30px;
+    padding-left: 8px;
+}
+
+.search-left {
+    padding-top: 20px;
+}
+
+.search-left input:first-child {
+    float: left;
+    width: 80%;
+    height: 26px;
+    padding-left: 8px;
+}
+
+.search-left input:last-child {
+    width: 20%;
+    height: 26px;
+    border: none;
+    background-color: #168f77;
+    color: white;
+}
+
+.check p,
+.pri p {
+    font-size: 16px;
+}
+
+
+/*input checket*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #168f77;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*input checket*/
+
+.pri input {
+    width: 60px;
+    height: 30px;
+    margin-left: 5px;
+    padding-left: 2px;
+}
+
+.row-book {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.row-book .book {
+    position: relative;
+    width: 190px;
+    height: 280px;
+    background-color: white;
+    margin: 20px 0;
+    margin-right: 15px;
+}
+
+.row-book .book:hover::before {
+    content: "";
+    width: 190px;
+    height: 280px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 1px solid #1ba085;
+}
+
+.book img {
+    width: 120px;
+    height: 175px;
+    position: absolute;
+    top: -20px;
+    left: 34px;
+}
+
+.book .name {
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+    width: 150px;
+    margin: auto;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.book .view {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+.book .price {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    font-size: 15px;
+    color: orange;
+}
+
+.book .addcart {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ba085;
+    cursor: pointer;
+    color: white;
+}
+
+.book a {
+    color: black;
+}
+
+.book button:hover {
+    background-color: #1b806b;
+}
+
+.book button a {
+    color: white;
+}
+
+
+/*---------------------end PRODUCT-------------------*/
+
+
+/*---------------------start ABOUT-------------------*/
+
+.section1 {
+    width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 30px;
+}
+
+.content1 {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    float: left;
+}
+
+.right1 {
+    width: 30%;
+    height: 559px;
+    float: left;
+    background: url('../img/bn4.jpg');
+    background-size: auto;
+}
+
+
+/*---------------------end ABOUT-------------------*/
+
+
+/*---------------------star CONTACT-------------------*/
+
+.section2 {
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.section2 .sign-up {
+    text-align: center;
+    padding-top: 20px;
+    color: #1ba085;
+}
+
+.section2 .form-transparent {
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    height: 530px;
+}
+
+.section2 .form {
+    width: 450px;
+    margin: auto;
+}
+
+.section2 label {
+    font-size: 15px;
+}
+
+.section2 .box {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #1ba085;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.section2 .form .submit {
+    width: 90px;
+    padding: 10px;
+    border: none;
+    background-color: #1ba085;
+    color: white;
+    border-radius: 3px;
+}
+
+
+/*---------------------end CONTACT-------------------*/
+
+
+/*---------------------start NEWS--------------------*/
+
+.news {
+    font-size: 18px;
+    color: #1ba085;
+    border-bottom: 1px solid #1ba085;
+    text-transform: uppercase;
+}
+
+.content2 {
+    width: 70%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    float: left;
+}
+
+.content2 .row-new {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.content2 .row-new img {
+    width: 100%;
+}
+
+.content2 .row-new .name {
+    text-transform: uppercase;
+    color: #1ba085;
+    font-size: 15px;
+}
+
+.content2 .row-new .name:hover {
+    color: #168f77;
+}
+
+.right {
+    width: 28%;
+    float: right;
+    background-color: white;
+    height: auto;
+    padding-top: 10px;
+}
+
+.right .col-new {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.right .col-new img {
+    width: 100%;
+}
+
+.right .col-new .name {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #1ba085;
+}
+
+
+/*---------------------end NEWS----------------------*/
+
+
+/*-----------product detail----------*/
+
+.content3 {
+    width: 1100px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.wrap-header {
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    border-bottom: 1px solid #1b806b;
+}
+
+.wrap-header .card-title {
+    float: left;
+}
+
+.wrap-header .card-title h1 {
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1b806b;
+}
+
+.wrap-header .wrap-nav {
+    float: right;
+    line-height: 40px;
+}
+
+.wrap-header .wrap-nav li {
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+    position: relative;
+}
+
+.wrap-header .wrap-nav li a {
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.wrap-header .wrap-nav li a:hover {
+    color: #197461;
+}
+
+.wrap-header .wrap-nav li:hover::before {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #168f77;
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 50%;
+}
+
+.left-wrap-cnt {
+    float: left;
+    width: 830px;
+}
+
+.top-left-wr {
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.left-wrap-cnt .card-img {
+    float: left;
+    width: 240px;
+    height: 350px;
+}
+
+.left-wrap-cnt .card-img img {
+    width: 100%;
+}
+
+.left-wrap-cnt .txt-detail {
+    float: left;
+    width: 560px;
+    padding: 0 40px;
+}
+
+.left-wrap-cnt .txt-detail h1 {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.left-wrap-cnt .txt-detail p {
+    font-size: 14px;
+}
+
+.left-wrap-cnt .txt-detail span {
+    color: #168f77;
+    text-transform: capitalize;
+}
+
+.left-wrap-cnt .price {
+    font-size: 20px;
+    color: #168f77;
+}
+
+.left-wrap-cnt .txt-detail button {
+    width: 100px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    background-color: #1ba085;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.left-wrap-cnt .txt-detail button a {
+    color: white;
+}
+
+.left-wrap-cnt .detail {
+    padding-top: 20px;
+    word-spacing: 2px;
+}
+
+.right-wrap-cnt {
+    float: right;
+    width: 260px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.cmt {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.right-wrap-cnt h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.right-wrap-cnt .list-img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.right-wrap-cnt .box-img {
+    width: 150px;
+    height: 220px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.right-wrap-cnt img {
+    width: 100%;
+}
+
+.right-wrap-cnt .box-img:hover::before {
+    content: "Chi tiết";
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #168f77;
+    text-align: center;
+    color: #f5f5f5;
+    line-height: 40px;
+}
+
+
+/*-----------product detail----------*/
+
+
+/*-----------user info----------*/
+
+.box-profi-left {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+
+.box-profi-right {
+    width: 49%;
+    float: left;
+}
+
+.profi {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.profi .txtt {
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+table th {
+    padding: 20px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.od td {
+    padding: 10px 10px 10px 20px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+
+/*-------PRO user-----*/
+
+.wrapuser {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+}
+
+.row-show {
+    width: 100%;
+    overflow: hidden;
+}
+
+.show-info {
+    width: 33.33%;
+    height: 220px;
+    padding: 20px;
+    float: left;
+}
+
+.boxx {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.boxx span {
+    color: #424242;
+}
+
+.boxx .txt {
+    font-size: 15px;
+}
+
+.btn-edit {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #168f77;
+    border-radius: 2px;
+    border: none;
+    color: white;
+}
+
+.btn-edit a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-edit:hover {
+    background-color: teal;
+}
+
+
+/*-------PRO user-----*/
+
+
+/*-------EDIT user-----*/
+
+.boxx input {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: 1px solid #168f77;
+    padding-left: 10px;
+}
+
+
+/*-------EDIT user-----*/
+
+
+/*-----------user info----------*/
+
+
+/*---------------------start FOOTER------------------*/
+
+
+/*start slogan*/
+
+.slogan {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    background-color: #1ba085;
+    color: white;
+    padding-top: 20px;
+}
+
+.slogan .author {
+    font-size: large;
+}
+
+
+/*end solgan*/
+
+footer {
+    width: 100%;
+    height: 210px;
+    padding: 20px;
+}
+
+.footer-transparent {
+    width: 1100px;
+    margin: auto;
+}
+
+.information {
+    width: 33.33%;
+    float: left;
+}
+
+.contact {
+    width: 33.33%;
+    float: left;
+}
+
+.connect {
+    width: 33.33%;
+    float: left;
+}
+
+.connect a {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .3s linear;
+    position: relative;
+    color: white;
+}
+
+.connect a:hover {
+    transform: scale(1.3);
+    background-color: #1ba085;
+}
+
+.connect a i::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/*--------------------------end FOOTER----------------------*/
+
+
+/*--star view cart--*/
+
+.my_order {
+    float: left;
+    width: 65%;
+}
+
+.my_order i {
+    font-size: 25px;
+    color: #168f77;
+}
+
+.checkout {
+    float: left;
+    width: 33%;
+    margin-left: 2%;
+    padding: 0px 25px;
+    background-color: white;
+    height: 550px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.checkout span {
+    font-size: 14px;
+}
+
+#sub {
+    width: 50%;
+    height: 41px;
+    background-color: #1ba085;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#sub:hover {
+    background-color: teal;
+}
+
+
+/*--end view cart--*/
+
+.wrap-content3 {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+
+/* star comment */
+
+.comment {
+    margin-top: 11px;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    padding: 15px 15px;
+}
+
+.wrap-cmt {
+    padding-bottom: 20px;
+    border: 1px solid #CCC;
+}
+
+.title-cmt {
+    font-size: 18px;
+    color: #168f77;
+    margin-bottom: 20px;
+}
+
+.wrap-cmt .name i {
+    margin: 10px;
+}
+
+.wrap-cmt .name {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.wrap-cmt .name .date {
+    font-size: 14px;
+    color: gray;
+}
+
+.wrap-cmt .text {
+    margin-left: 35px;
+    font-size: 15px;
+    font-style: italic;
+    color: #168f77;
+}
+
+.wrap-cmt .edit {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.wrap-cmt .edit a {
+    color: gray;
+}
+
+.wrap-cmt .edit a:hover {
+    color: black;
+}
+
+.wrap-cmt form {
+    padding: 0 35px;
+}
+
+.wrap-cmt form textarea {
+    width: 100%;
+    height: 100px;
+    padding-left: 15px;
+    padding-top: 15px;
+    white-space: pre-line;
+}
+
+.wrap-cmt form input {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #168f77;
+    border: 3px;
+    color: white;
+    cursor: pointer;
+}
+/* star comment */
+
+.order-info {
+    width: 31%;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: #fff;
+}
+
+#cancel {
+    background: rgb(233, 1, 1); 
+    color: #fff; 
+    font-size: 14px;
+    width: 150px;
+    border-radius: 3px;
+    border: none;
+    padding: 6px;
+    margin: 10px auto;
+    text-align: center;
+}
