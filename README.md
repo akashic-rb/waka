@@ -2,6 +2,7 @@
 
 Description: This is a book ecommerce website, you can go and view books, read their overview, read review of a book you like, also leave a review of the book, search and buy books you want!
 
+Download & Instruction:
 1. Install/Make sure to have a PHP Server support
 2. Create a database in phpMyAdmin
 3. In phpMyAdmin import /database/waka.sql
@@ -12,6 +13,7 @@ Description: This is a book ecommerce website, you can go and view books, read t
 5. Launch PHP Server support
 6. Open your browser, go to localhost/index.php
 
+Tribution:
 Special thanks to my team members who were enthusiastically working with me in this project
 - Đỗ xuân Phương (Front-end, Leader)
 - Trịnh Ngọc Hậu (Front-end)
