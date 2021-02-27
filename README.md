@@ -1,6 +1,6 @@
 ﻿WAKA
 
-Description: This is a ecommerce website, you can go and view books, read their overview, read review of a book you like, and also leave a review of the book
+Description: This is a book ecommerce website, you can go and view books, read their overview, read review of a book you like, also leave a review of the book, search and buy books you want!
 
 1. Install/Make sure to have a PHP Server support
 2. Create a database in phpMyAdmin
