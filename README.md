@@ -1,6 +1,6 @@
 ﻿WAKA
 
-Description: This is a book ecommerce website, you can go and view books, read their overview, read review of a book you like, also leave a review of the book, search and buy books you want!
+Description: This is a book ecommerce website, where you can go and view books, read their overview, read review of a book you like, also leave a review of the book, search buy books you want, and much more!
 
 Download & Instruction:
 1. Install/Make sure to have a PHP Server support
@@ -13,7 +13,7 @@ Download & Instruction:
 5. Launch PHP Server support
 6. Open your browser, go to localhost/index.php
 
-Tribution:
+Contribution:
 Special thanks to my team members who were enthusiastically working with me in this project
 - Đỗ Xuân Phương (Front-end, Leader)
 - Trịnh Ngọc Hậu (Front-end)
